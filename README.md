@@ -3,7 +3,7 @@ s3cmd role
 
 s3cmd role
 
-This role will let you s3cmd and configure it
+This role will let you use s3cmd and configure it
 
 Requirements
 ------------
@@ -22,7 +22,7 @@ Usage
 
 The role is supposed to be used this way from a playbook:
 
-   - { role: leucos.s3cmd }
+   - { role: s3cmd }
 
 Dependencies
 ------------
@@ -37,4 +37,9 @@ MIT
 Author Information
 ------------------
 
+Original Author:
 [@leucos](https://github.com/leucos)
+
+Modified to use latest git copy by:
+[@dezzak](https://github.com/dezzak)
+
