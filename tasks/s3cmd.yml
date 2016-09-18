@@ -5,6 +5,13 @@
   with_items:
     - python-magic
 
+- name: Ensure that apt s3cmd is not present
+  apt: 
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - s3cmd
+
 - name: install s3cmd from source
   git:
     repo=https://github.com/s3tools/s3cmd.git
