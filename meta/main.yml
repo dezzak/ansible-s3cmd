@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: Michel Blanc
+  author: Derek Kaye
   description: 
-  company: devops.works
+  company:
   license: MIT
   min_ansible_version: 1.9
 
@@ -13,6 +13,7 @@ galaxy_info:
     - name: Debian
       versions:
         - wheezy
+        - jessie
 
   categories:
     - cloud
