@@ -1,16 +1,14 @@
 - name: Installs s3cmd dependencies
   apt: 
-    name: "{{ item }}"
-    state: latest
-  with_items:
-    - python-magic
+    name:
+      - python-magic
+    state: present
 
 - name: Ensure that apt s3cmd is not present
   apt: 
-    name: "{{ item }}"
+    name:
+      - s3cmd
     state: absent
-  with_items:
-    - s3cmd
 
 - name: install s3cmd from source
   git:
